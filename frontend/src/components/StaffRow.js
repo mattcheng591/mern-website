@@ -7,9 +7,8 @@ function StaffRow({person}) {
                 <img src={person.picture.thumbnail} alt="Portrait" />
             </td>
             <td>
-            <a href="mailto:${person.email}">
-            {person.name.first}
-            {person.name.last}</a>
+                <a href="mailto:${person.email}">
+                {person.name.first} {person.name.last}</a>
             </td>
             <td>{person.phone}</td>
             <td>{person.location.city}</td>
