@@ -64,9 +64,9 @@ export const CreatePage = () => {
                                 onChange={e => setUnit(e.target.value)}
                                 required
                             >
+                                <option value="lbs">Lbs</option>
                                 <option value="grams">Grams</option>
                                 <option value="ounces">Ounces</option>
-                                <option value="lbs">Lbs</option>
                                 <option value="teaspoons">Teaspoons</option>
                                 <option value="tablespoons">Tablespoons</option>
                                 <option value="cups">Cups</option>

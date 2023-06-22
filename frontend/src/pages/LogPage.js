@@ -41,7 +41,7 @@ function LogPage({ setFood }) {
     return(
         <div>
             <h2>List of Food Entries</h2>
-            <p>This page shows the entries of food eaten along with the amount of macronutrients taken in.</p>
+            <p>This page shows the entries of food eaten along with the amount of macronutrients taken in. This is connected to a MongoDB cluster and anyone can make changes to the entries.</p>
             <p>Click on the + to add a new entry.</p>
             <LogTable
                 foods={foods}

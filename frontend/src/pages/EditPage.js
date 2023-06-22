@@ -43,10 +43,10 @@ export const EditPage = ({ foodToEdit }) => {
 
     return (
         <>
+        <article id="edit-page">
             <h2>Edit a Food Item</h2>
-            
             <table id="food-items">
-                <caption>Edit a food item.</caption>
+                <caption>Make changes to the food item. If units stay as "Select Units", no changes will be made.</caption>
                 <TableHead/>
                 <tbody>
                     <tr>
@@ -70,9 +70,10 @@ export const EditPage = ({ foodToEdit }) => {
                                 name='unit'
                                 onChange={e => setUnit(e.target.value)}
                             >
+                                <option value="select" disabled selected>Select Units</option>
+                                <option value="lbs">Lbs</option>
                                 <option value="grams">Grams</option>
                                 <option value="ounces">Ounces</option>
-                                <option value="lbs">Lbs</option>
                                 <option value="teaspoons">Teaspoons</option>
                                 <option value="tablespoons">Tablespoons</option>
                                 <option value="cups">Cups</option>
@@ -127,6 +128,7 @@ export const EditPage = ({ foodToEdit }) => {
                     </tr>
                 </tbody>
             </table>
+        </article>
         </>
     )
 }

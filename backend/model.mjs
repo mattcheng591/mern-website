@@ -38,7 +38,7 @@ const nutritionSchema = mongoose.Schema({
               default: 0,
               min: [0, 'Please enter a value.']},
     date:   { type: Date, required: true, default: Date.now},
-    unit:   { type: String, required: true, default: 'lbs', min:[0, 'Please enter a value.']}
+    unit:   { type: String, required: true, default: 'lbs'}
 });
 
 const Food = mongoose.model("Food", nutritionSchema);
