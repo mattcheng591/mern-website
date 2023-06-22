@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import 'dotenv/config';
 
 mongoose.connect(
-    'mongodb+srv://user:user@cluster0.boancrw.mongodb.net/?retryWrites=true&w=majority',
+    process.env.MONGODB_CONNECT_STRING,
     { useNewUrlParser: true }
 );
 const db = mongoose.connection;
