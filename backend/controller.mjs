@@ -4,12 +4,11 @@ import * as nutritionlog from './model.mjs';
 const PORT = process.env.PORT;
 const app = express();
 app.use(express.json());
--app.use(express.urlencoded({ extended: false }));
-app.use(
-    cors({
-        origin: ["http://localhost:3000", "https://mern-website-y9x4.onrender.com"],
-    })
-);
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+ })
 
 app.post('/log', (req, res) => {
     nutritionlog.createNutrition(
