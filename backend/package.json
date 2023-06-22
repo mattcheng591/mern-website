@@ -1,0 +1,21 @@
+{
+  "name": "nutrition",
+  "version": "1.0.0",
+  "description": "Logs general nutrition for food items that I eat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon controller.mjs",
+    "build": "npm i"
+  },
+  "author": "Matthew Cheng",
+  "license": "ISC",
+  "dependencies": {
+    "@mui/icons-material": "^5.11.16",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.1",
+    "nodemon": "^2.0.22",
+    "rest": "^2.0.0"
+  }
+}
