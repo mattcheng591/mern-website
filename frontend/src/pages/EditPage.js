@@ -15,7 +15,7 @@ export const EditPage = ({ foodToEdit }) => {
     const navigate = useNavigate();
 
     const editNutrition = async () => {
-        const response = await fetch(`/log/${foodToEdit._id}`, {
+        const response = await fetch(`https://mern-website-y9x4.onrender.com/log/${foodToEdit._id}`, {
            method: 'PUT',
            body: JSON.stringify({
                 food: food,

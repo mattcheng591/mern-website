@@ -17,7 +17,7 @@ export const CreatePage = () => {
     const addNutrition = async () => {
         const newNutrition = { food, size, cals, carbs, fat ,protein, date, unit };
 
-        const response = await fetch('/log', {
+        const response = await fetch('https://mern-website-y9x4.onrender.com/log', {
             method: 'POST',
             body: JSON.stringify(newNutrition),
             headers: {
