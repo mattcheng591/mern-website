@@ -9,7 +9,7 @@ function LogPage({ setFood }) {
 
     // Retrieve list of foods
     const loadFoods = async () => {
-        const response = await fetch('/log');
+        const response = await fetch('https://mern-website-y9x4.onrender.com/log');
         const foods = await response.json();
         setFoods(foods);
     }
@@ -22,9 +22,9 @@ function LogPage({ setFood }) {
 
     // Delete a single food
     const onDeleteFood = async _id => {
-        const response = await fetch(`/log/${_id}`, { method: 'DELETE' });
+        const response = await fetch(`https://mern-website-y9x4.onrender.com/log/${_id}`, { method: 'DELETE' });
         if (response.status === 204) {
-            const getResponse = await fetch('/log');
+            const getResponse = await fetch('https://mern-website-y9x4.onrender.com/log');
             const foods = await getResponse.json();
             setFoods(foods);
         } else {
