@@ -27,13 +27,6 @@ function TopicsPage() {
                         and a body, which is optional. While some of this information is not really shown when viewing the website on my local computer, there is more displayed on the web server. The web server
                         has a few more files, such as favicon.ico and content.min.css. Also, the time to load the page is slower, which makes sense since we are not loading the website locally.
                     </p>
-                    <p>
-                        The reason why main.css and main.js are not showing as <strong>status 200</strong> because they are simply not found. In our HTML code, we reference main.css and main.js but have not actually
-                        created them yet. The main.css and main.js files show status 404 while the favicon.ico, content.min.css, and a2-chengmat files have status 200.
-                        The <strong>scheme</strong> of my URL is https://, the <strong>subdomain</strong> is web.engr, the <strong>host domain</strong> is oregonstate.edu,
-                        and the <strong>resource</strong> is /~chengmat/a1-chengmat.
-                    </p>
-
             </article>
             <article>
                 <h3 id="frontend">Frontend Design</h3>

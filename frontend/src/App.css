@@ -196,6 +196,7 @@ table {
   background-color: var(--mud);
   margin-bottom: 15px;
   border-spacing: 0;
+  width: 100%;
 }
 caption {
   font-weight: bold;
